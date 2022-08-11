@@ -33,5 +33,5 @@ vars:
     time_zone: "{{ source('bronze_zendesk', 'time_zone') }}"
     daylight_time: "{{ source('bronze_zendesk', 'daylight_time') }}"
     zendesk_schema: bronze_zendesk
-    using_schedules: false 
+    using_schedules: true 
     zendesk__ticket_passthrough_columns: ['custom_received_at_noreply_','custom_ticket_type']
